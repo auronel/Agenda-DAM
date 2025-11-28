@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_perfil"
+        android:title="@string/menu_perfil"
+        android:icon="@drawable/ic_perfil" />
+
+    <item
+        android:id="@+id/nav_ajustes"
+        android:title="@string/menu_ajustes"
+        android:icon="@drawable/ic_preferencias" />
+
+    <item
+        android:id="@+id/nav_api"
+        android:title="@string/menu_api"
+        android:icon="@drawable/ic_api" />
+
+    <item
+        android:id="@+id/nav_tareas"
+        android:title="@string/menu_tareas"
+        android:icon="@drawable/ic_tareas" />
+
+</menu>

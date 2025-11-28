@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Agenda DAM</string>
+    <string name="login_titulo">Iniciar sesión</string>
+    <string name="login_correo">Correo electrónico</string>
+    <string name="login_pass">Contraseña</string>
+    <string name="login_btn_inicio">Iniciar sesión</string>
+    <string name="login_btn_registro">Registrarse</string>
+    <string name="registro_titulo">Registro</string>
+    <string name="registro_nombre">Nombre de usuario</string>
+    <string name="registro_email">Correo electrónico</string>
+    <string name="registro_password">Contraseña</string>
+    <string name="registro_boton">Crear cuenta</string>
+    <string name="registro_boton_volver">Volver al login</string>
+    <string name="usuario_perfil">Perfil del usuario</string>
+    <string name="usuario_tareas">Tareas del usuario</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_ajustes">Ajustes</string>
+    <string name="menu_api">API</string>
+    <string name="menu_tareas">Tareas</string>
+    <string name="perfil_titulo">Perfil de usuario</string>
+    <string name="perfil_nombre">Nombre:</string>
+    <string name="perfil_email">Email:</string>
+    <string name="perfil_boton_editar">Editar perfil</string>
 </resources>
