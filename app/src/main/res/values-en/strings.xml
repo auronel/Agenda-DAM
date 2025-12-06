@@ -51,6 +51,11 @@
     <string name="tarea_estado_pendiente">Pending</string>
     <string name="tarea_estado_completada">Completed</string>
 
+    <string name="api_estado_pendiente">Pending</string>
+    <string name="api_estado_completada">Completed</string>
+    <string name="api_usuario_prefijo">User:</string>
+
     <string name="perfil_guardar">Save</string>
     <string name="perfil_cancelar">Cancel</string>
+    <string name="cerrar_sesion">Log out</string>
 </resources>

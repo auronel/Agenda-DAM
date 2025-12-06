@@ -56,4 +56,6 @@
 
     <string name="perfil_guardar">Guardar</string>
     <string name="perfil_cancelar">Cancelar</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+
 </resources>
