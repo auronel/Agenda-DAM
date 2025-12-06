@@ -1,16 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".fragments.TareasFragment">
 
-    <TextView
-        android:id="@+id/tvTareas"
+    <EditText
+        android:id="@+id/etTituloTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tarea_hint_titulo" />
+
+    <EditText
+        android:id="@+id/etDescripcionTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tarea_hint_descripcion" />
+
+    <Spinner
+        android:id="@+id/spPrioridad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <SeekBar
+            android:id="@+id/sbUrgencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="10" />
+
+        <TextView
+            android:id="@+id/tvValorUrgencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="0" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chkCompletada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/usuario_tareas"
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="@string/tarea_completada" />
+
+    <Button
+        android:id="@+id/btnGuardarTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea_guardar_actualizar" />
+
+    <Button
+        android:id="@+id/btnBorrarTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea_borrar" />
+
+    <Button
+        android:id="@+id/btnCompartirTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea_compartir" />
+
+    <SearchView
+        android:id="@+id/svBuscarTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Buscar por título" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTareas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_tarea" />
+
+</LinearLayout>

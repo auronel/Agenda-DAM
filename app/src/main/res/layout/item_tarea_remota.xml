@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvTituloTareaRemota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="titulo" />
+
+        <TextView
+            android:id="@+id/tvEstadoTareaRemota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/api_estado_pendiente" />
+
+        <TextView
+            android:id="@+id/tvUsuarioTareaRemota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/api_usuario_prefijo" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

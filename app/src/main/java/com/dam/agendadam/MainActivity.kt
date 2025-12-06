@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    private var nombreUsuarioLogueado: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,22 +26,35 @@ class MainActivity : AppCompatActivity() {
         val nombre = intent.getStringExtra("nombreUsuario")
         val email = intent.getStringExtra("emailUsuario")
 
+        // Guardar el nombre en la propiedad
+        nombreUsuarioLogueado = nombre ?: ""
+
         // 2) Crear PerfilFragment con argumentos
         val perfilFragment = PerfilFragment().apply {
             arguments = Bundle().apply {
-                putString("NOMBRE_USUARIO", nombre)
+                putString("NOMBRE_USUARIO", nombreUsuarioLogueado)
                 putString("EMAIL_USUARIO", email)
             }
         }
 
-        // 3) Fragment inicial: perfil
-        replaceFragment(perfilFragment)
+        // 3) Crear TareasFragment con el nombre como argumento
+        val tareasFragment = TareasFragment().apply {
+            arguments = Bundle().apply {
+                putString("NOMBRE_USUARIO", nombreUsuarioLogueado)
+            }
+        }
 
-        // 4) BottomNavigation
+        // 4) Fragment inicial SOLO la primera vez
+        if (savedInstanceState == null) {
+            replaceFragment(perfilFragment)
+            binding.bottomNav.selectedItemId = R.id.nav_perfil
+        }
+
+        // 5) BottomNavigation
         binding.bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_perfil -> replaceFragment(perfilFragment)
-                R.id.nav_tareas -> replaceFragment(TareasFragment())
+                R.id.nav_tareas -> replaceFragment(tareasFragment)
                 R.id.nav_api -> replaceFragment(ApiFragment())
                 R.id.nav_ajustes -> replaceFragment(AjustesFragment())
             }

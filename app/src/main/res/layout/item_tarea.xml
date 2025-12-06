@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvTituloItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/tarea_item_titulo" />
+
+        <TextView
+            android:id="@+id/tvDescripcionItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_item_descripcion" />
+
+        <TextView
+            android:id="@+id/tvInfoExtraItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="texto" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

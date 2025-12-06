@@ -5,9 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".fragments.ApiFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTareasRemotas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:listitem="@layout/item_tarea_remota" />
 
 </FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda DAM</string>
+    <string name="login_titulo">Sign in</string>
+    <string name="login_correo">Email</string>
+    <string name="login_pass">Password</string>
+    <string name="login_btn_inicio">Sign in</string>
+    <string name="login_btn_registro">Register</string>
+
+    <string name="registro_titulo">Sign up</string>
+    <string name="registro_nombre">Username</string>
+    <string name="registro_email">Email</string>
+    <string name="registro_password">Password</string>
+    <string name="registro_boton">Create account</string>
+    <string name="registro_boton_volver">Back to login</string>
+
+    <string name="usuario_perfil">User profile</string>
+    <string name="usuario_tareas">User tasks</string>
+
+    <string name="menu_perfil">Profile</string>
+    <string name="menu_ajustes">Settings</string>
+    <string name="menu_api">API</string>
+    <string name="menu_tareas">Tasks</string>
+
+    <string name="perfil_titulo">User profile</string>
+    <string name="perfil_nombre">Name:</string>
+    <string name="perfil_email">Email:</string>
+    <string name="perfil_boton_editar">Edit profile</string>
+
+    <string name="preferencias_titulo">Preferences</string>
+    <string name="preferencias_notificaciones">Enable notifications</string>
+    <string name="preferencias_tema_oscuro">Use dark theme</string>
+
+    <string name="tarea_titulo">Task title</string>
+    <string name="tarea_descripcion">Description</string>
+    <string name="tarea_hint_titulo">Task title</string>
+    <string name="tarea_hint_descripcion">Description</string>
+    <string name="tarea_completada">Completed</string>
+    <string name="tarea_guardar_actualizar">Save / Update</string>
+    <string name="tarea_borrar">Delete selected</string>
+    <string name="tarea_compartir">Share task</string>
+    <string name="tarea_item_titulo">Title</string>
+    <string name="tarea_item_descripcion">Description</string>
+
+    <string name="prioridad_alta">High</string>
+    <string name="prioridad_media">Medium</string>
+    <string name="prioridad_baja">Low</string>
+
+    <string name="tarea_item_prioridad">Priority:</string>
+    <string name="tarea_item_urgencia">Urgency:</string>
+    <string name="tarea_estado_pendiente">Pending</string>
+    <string name="tarea_estado_completada">Completed</string>
+
+    <string name="perfil_guardar">Save</string>
+    <string name="perfil_cancelar">Cancel</string>
+</resources>

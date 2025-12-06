@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    tools:context=".fragments.TareasFragment">
+
+    <!-- Columna izquierda: formulario y botones -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTituloTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tarea_titulo" />
+
+        <EditText
+            android:id="@+id/etDescripcionTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tarea_descripcion" />
+
+        <Spinner
+            android:id="@+id/spPrioridad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <SeekBar
+                android:id="@+id/sbUrgencia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10" />
+
+            <TextView
+                android:id="@+id/tvValorUrgencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:text="0" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/chkCompletada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_completada" />
+
+        <Button
+            android:id="@+id/btnGuardarTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_guardar_actualizar" />
+
+        <Button
+            android:id="@+id/btnBorrarTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_borrar" />
+
+        <Button
+            android:id="@+id/btnCompartirTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_compartir" />
+
+        <SearchView
+            android:id="@+id/svBuscarTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="@string/tarea_item_titulo" />
+
+    </LinearLayout>
+
+    <!-- Columna derecha: lista -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTareas"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_tarea" />
+
+</LinearLayout>

@@ -5,20 +5,55 @@
     <string name="login_pass">Contraseña</string>
     <string name="login_btn_inicio">Iniciar sesión</string>
     <string name="login_btn_registro">Registrarse</string>
+
     <string name="registro_titulo">Registro</string>
     <string name="registro_nombre">Nombre de usuario</string>
     <string name="registro_email">Correo electrónico</string>
     <string name="registro_password">Contraseña</string>
     <string name="registro_boton">Crear cuenta</string>
     <string name="registro_boton_volver">Volver al login</string>
+
     <string name="usuario_perfil">Perfil del usuario</string>
     <string name="usuario_tareas">Tareas del usuario</string>
+
     <string name="menu_perfil">Perfil</string>
     <string name="menu_ajustes">Ajustes</string>
     <string name="menu_api">API</string>
     <string name="menu_tareas">Tareas</string>
+
     <string name="perfil_titulo">Perfil de usuario</string>
     <string name="perfil_nombre">Nombre:</string>
     <string name="perfil_email">Email:</string>
     <string name="perfil_boton_editar">Editar perfil</string>
+    <string name="preferencias_titulo">Preferencias</string>
+
+    <string name="preferencias_notificaciones">Activar notificaciones</string>
+    <string name="preferencias_tema_oscuro">Usar tema oscuro</string>
+
+    <string name="tarea_titulo">Título de la tarea</string>
+    <string name="tarea_descripcion">Descripción</string>
+    <string name="tarea_hint_titulo">Título de la tarea</string>
+    <string name="tarea_hint_descripcion">Descripción</string>
+    <string name="tarea_completada">Completada</string>
+    <string name="tarea_guardar_actualizar">Guardar / Actualizar</string>
+    <string name="tarea_borrar">Borrar seleccionada</string>
+    <string name="tarea_compartir">Compartir tarea</string>
+    <string name="tarea_item_titulo">Título</string>
+    <string name="tarea_item_descripcion">Descripción</string>
+
+    <string name="prioridad_alta">Alta</string>
+    <string name="prioridad_media">Media</string>
+    <string name="prioridad_baja">Baja</string>
+
+    <string name="tarea_item_prioridad">Prioridad:</string>
+    <string name="tarea_item_urgencia">Urgencia:</string>
+    <string name="tarea_estado_pendiente">Pendiente</string>
+    <string name="tarea_estado_completada">Completada</string>
+
+    <string name="api_estado_completada">Completada</string>
+    <string name="api_estado_pendiente">Pendiente</string>
+    <string name="api_usuario_prefijo">Usuario:</string>
+
+    <string name="perfil_guardar">Guardar</string>
+    <string name="perfil_cancelar">Cancelar</string>
 </resources>
